@@ -1,0 +1,13 @@
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (const i of arr) {
+  console.log(arr);
+} // We can use it as we want
+
+const name = "Jasim ansari";
+for(const index of name){
+    if(index === " "){
+        continue;
+    }else {
+        console.log(`Name is: ${index}`);
+    }
+}

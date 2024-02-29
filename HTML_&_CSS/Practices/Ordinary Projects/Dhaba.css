@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    max-width: 1200px;
+    height: 20px;
+    padding: 2rem;
+    background-color: antiquewhite;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+}

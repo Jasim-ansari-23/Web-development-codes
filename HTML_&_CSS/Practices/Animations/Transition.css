@@ -1,0 +1,81 @@
+/* div{
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    padding: 15px;
+} */
+ 
+/* div:hover{
+    background-color: blue;
+    color: white;
+}
+
+div:active{
+    background-color: aquamarine;
+    color: black;
+}
+
+div:hover{
+    background-color: chartreuse;
+} */
+
+/* .scaler{ */
+    /* width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-top: 20px; */
+    /* transform: scale(2,3); -> it'll increase the width and height */
+    /* transform: scaleX(6); for width */
+    /* transform: scaleY(3); for height */
+    /* animation-name: coloranime;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 6; */
+/* } */
+
+/* .scaler:hover{
+    transform: translate(50%, 50%);     
+} */
+
+/* @keyframes coloranime { 
+    from {background-color: aquamarine;}
+    to {background-color: blue;}
+} */
+
+/* Creating loader */
+
+.scaler{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 20px solid black;
+    border-top: 20px solid blue;
+    animation: loader 1s ease-in-out 1s infinite;
+}
+
+@keyframes loader{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.text-container{
+    animation: leftslide 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes leftslide{
+    0%{
+        opacity: 0;
+        transform: translate(-100%);
+    }
+    100%{
+        opacity: 100%;
+        transform: translate(0);
+    }
+}

@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 30px auto;
+    max-width: 1000px;
+    width: 90vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.box {
+    width: calc(20%);
+    height: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
+    /* transform: rotate(135deg); */
+    /* transform: rotate(0.1turn); */
+    /* transform: scale(1.2); */
+    /* transform: skew(10deg); */
+}
+
+.box1:hover {
+    transform: scaleX(1.8);
+}
+
+.box2:hover {
+    transform: scaleY(1.8);
+}
+
+.box3:hover{
+    transform: scale(1.8);
+}
+
+.box4:hover{
+    transform: translateX(20%);
+}
+
+.box5:hover{
+    transform: translateY(30%);
+}
+
+.box6:hover{
+    transform: translate(2em);
+}

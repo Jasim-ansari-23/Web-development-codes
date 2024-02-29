@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event registration</h1>
+    <br>
+    <input type="text" id="name" placeholder="Enter your name"><br>
+    <input type="text" id="email" placeholder="Enter your email"><br>
+    <input type="number" id="num" placeholder="Enter your number"><br>
+    <label for="org">Organization</label>
+    <br>
+    <select name="Org" id="Org">
+        <option value="Data science">Data science</option>
+        <option value="Software engineer">Software engineer</option>
+        <option value="Cloud engineer">Cloud engineer</option>
+    </select>
+    <br>
+    <form>
+        <fieldset>
+            <legend>Skills</legend>
+            <div>
+                <input type="radio" id="Java" name="Lang" value="skill" />
+                <label for="Java">Java</label>
+
+                <input type="radio" id="C++" name="Lang" value="skill2" />
+                <label for="C++">C++</label>
+
+                <input type="radio" name="Lang" id="Python">
+                <label for="Python">Python</label>
+            </div>
+            <br>
+            </fieldset>
+    </form>
+    <label for="Com">Comments</label>
+    <br>
+    <textarea name="Comments" id="Comments" cols="50" rows="10"></textarea>
+    <br>
+    <label for="file">Upload a file</label>
+    <input type="file">
+    <br>
+    <button>Submit</button>
+</body>
+</html>

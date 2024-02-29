@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient( 135deg, #FFF6B7 10%, #F6416C 100%);
+}
+
+.box{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+    border-radius: 2rem;
+    margin-top: 10px;
+    margin-left: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.342);
+    animation: movement 5s infinite linear alternate;
+}
+
+.box2{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+    border-radius: 2rem;
+    margin-left: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.342);
+    animation: lmovement 5s infinite linear alternate;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.479);
+    border-radius: 50%;
+    position: relative;
+    top: 250px;
+    left: 675px;
+    animation: cmovement 5s infinite linear alternate;
+}
+
+@keyframes movement{
+    from{
+        top: 0;
+        left: 0;
+    }
+    to{
+        top: 0;
+        left: 1200px;
+    }
+}
+
+@keyframes lmovement{
+    from{
+        top: 780px;
+        left: 1200px;
+    }
+    to{
+        top: 780px;
+        left: 0;
+    }
+}
+
+@keyframes cmovement{
+    0%{
+        top: 0%;
+        left: 5%;
+    }
+    30%{
+       top: 5%;
+       left: 90%;
+    }
+    60%{
+        top: 70%;
+        left: 10%;
+    }
+    100%{
+        top: 75%;
+        left: 90%;
+    }
+}

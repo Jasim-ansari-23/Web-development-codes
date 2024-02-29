@@ -1,0 +1,19 @@
+/* div{
+    width: 300px;
+    height: 400px;
+    background-color: red;
+}
+
+@media (min-width: 300px) and (max-width: 600px){
+    div{
+        width: 300px;
+        height: 200px;
+        background-color: blue;
+    }
+} */
+
+.box{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+}

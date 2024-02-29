@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('boat-trip-under-the-moonlight-5120x2880_786768-mm-90.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    
+}

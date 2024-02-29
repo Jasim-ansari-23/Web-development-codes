@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch User Data</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #userDataContainer {
+            margin-top: 20px;
+        }
+
+        #profileImage {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="fetchDataButton" onclick="fetchUserData()">Fetch User Data</button>
+    <div id="userDataContainer"></div>
+
+    <script>
+
+        function fetchUserData() {
+            const xml = new XMLHttpRequest();
+            xml.open("GET", "https://api.github.com/users/Jasim-ansari-23");
+            xml.onreadystatechange = () => {
+                if (xml.readyState === 4 && xml.status === 200) {
+                    const userData = JSON.parse(xml.responseText);
+                    displayUserData(userData);
+                }
+            };
+            xml.send();
+        }
+
+        function displayUserData(userData) {
+            const userDataContainer = document.getElementById("userDataContainer");
+            userDataContainer.innerHTML = `
+            <h2>User Data:</h2>
+            <img id="profileImage" src="${userData.avatar_url}" alt="Profile Image">
+            <p><strong>Followers:</strong> ${userData.followers}</p>
+            <p><strong>Following:</strong> ${userData.following}</p>
+            <p><strong>Name:</strong> ${userData.name}</p>
+            <p><strong>Location:</strong> ${userData.location}</p>
+            `;
+        }
+        
+    </script>
+</body>
+
+</html>

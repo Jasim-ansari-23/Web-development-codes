@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selector</title>
+    <style>
+        /* Child selector */
+        div{
+            background-color: blue;
+        }
+        /* div > h2, p{
+            color: white;
+        } */
+
+        /* Descendants selector*/
+        .txt p{
+            color: white;
+        }
+        /* Pseudo selector */
+        a:visited{
+            color: aqua;
+        }
+        a:link{
+            color: white;
+        }
+        a:hover{
+            color: chartreuse;
+        }
+
+        .txt h2:first-child{
+            color: aquamarine;
+        }
+        .txt h2:last-child{
+            color: beige;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="txt">
+        <h2>I'm first child</h2>
+        <h2>I'm second child</h2>
+        <h2>Jasim ansari</h2>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati harum tenetur sed, eaque provident tempore! Dolore cumque cupiditate sapiente. Ab vel molestias voluptas sint beatae quis, facilis error dolores suscipit.</p>
+        </article>
+        <a href="http://www.google.com">Google</a>
+        <a href="http://www.facebook.com">facebook</a>
+    </div>
+    <div class="heading">
+        <h2>Jibrail ansari</h2>
+    </div>
+</body>
+</html>

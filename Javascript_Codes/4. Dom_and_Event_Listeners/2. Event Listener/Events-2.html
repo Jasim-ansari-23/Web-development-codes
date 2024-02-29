@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listeners 2</title>
+</head>
+
+<body>
+    <h2>Hello ji kaise ho saare</h2>
+    <button id="btn">Stop</button>
+
+    <script>
+        // For setTimeout
+        let title = document.querySelector('h2');
+        let button = document.querySelector('#btn');
+
+        function changeText() {
+            title.innerText = 'Sab thik h bhai';
+        }
+
+        // let changeme = setTimeout(changeText, 1000);
+        // console.log(changeme);
+
+        // document.querySelector('#btn').addEventListener('click', () => {
+        //     clearTimeout(5);
+        //     button.innerText = 'Stopped';
+        // });
+
+        // For SetInterval
+        let changeMe2 = setInterval(changeText, 1000);
+        document.querySelector('#btn').addEventListener('click', ()=>{
+            button.innerText = 'Stopped';
+            clearInterval(2);
+        });
+        console.log(changeMe2);
+    </script>
+</body>
+
+</html>

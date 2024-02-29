@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    max-width: 95vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header-container{
+    margin-bottom: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    place-items: center;
+    text-align: center;
+}
+
+.header-title{
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.header-desc{
+    font-size: 1.2rem;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.card-container .card-container2{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+}
+
+.card-image-container{
+    position: relative;
+    overflow: hidden;
+    height: 15rem;
+}
+
+.card-image{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.card-title-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.card-title{
+    color: black;
+    transform: color;
+    transition-duration: 0.5s;
+}
+
+.card-title:hover{
+    color: blue;
+}
+
+.card-container:hover .card-image{
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+
+.card-desc{
+    font-size: 1.025rem;
+}
+
+.card-footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.author-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-avatar-container{
+    overflow: hidden;
+    display: flex;
+    padding-left: 1rem;
+}
+
+.author-avatar{
+    height: 50px;
+    width: 50px;
+}
+
+.author-info-container{
+    margin-left: -100px;
+}
+
+.card-tag-container{
+    padding-right: 1rem;
+}

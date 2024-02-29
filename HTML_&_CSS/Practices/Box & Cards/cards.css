@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 700px;
+    background-color: white;
+    border-radius: 2.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.26);
+    gap: 20px;
+}
+
+.box img{
+    width: 100%;
+    height: 35%;
+    border-radius: 30px 30px 0 0;
+}
+
+.text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.amount-box{
+    width: 80%;
+    height: 10%;
+    background-color: #5EFCE8;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.left-box{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.right-box{
+    text-align: end;
+}
+
+.image-box{
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount{
+
+}
+
+.payment-btn{
+    width: 80%;
+    height: 9%;
+    background-color: #1100ff;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.473);
+    cursor: pointer;
+}
+
+.Cancel{
+    font-size: 16px;
+}

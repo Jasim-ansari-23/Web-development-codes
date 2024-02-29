@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Marks</th>
+        </thead>
+        <tr>
+            <td>Jasim</td>
+            <td>21</td>
+            <td>90.99</td>
+        </tr>
+        <tr>
+            <td>Aakib</td>
+            <td>16</td>
+            <td>95.99</td>
+        </tr>
+        <tr>
+            <td>Jibrail</td>
+            <td>21</td>
+            <td>96.99</td>
+        </tr>
+        <tr>
+            <td>Faizan</td>
+            <td>21</td>
+            <td>99.25</td>
+        </tr>
+    </table>
+
+    <!-- Extend the row and column space, using (span) like (colspan, rowspan) -->
+    <table border="2">
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Marks</th>
+        </thead>
+        <tr>
+            <td colspan="3">Jasim</td>
+        </tr>
+        <tr>
+            <td>Aakib</td>
+            <td>16</td>
+            <td rowspan="3">95.99</td>
+        </tr>
+        <tr>
+            <td>Jibrail</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Faizan</td>
+            <td>21</td>
+        </tr>
+    </table>
+    
+    
+    <table border="2">
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Marks</th>
+        </thead>
+        <tr>
+            <td colspan="3">Jasim</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Aakib</td>
+            <td>16</td>
+            <td rowspan="3">95.99</td>
+        </tr>
+        <tr>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td colspan="3">Aakib</td>
+        </tr>
+    </table>
+
+    <table border="3">
+        <thead>Name</thead>
+        <thead>Age</thead>
+        <thead>Marks</thead>
+        <thead>University</thead>
+        <tr>
+            <td>Jasim</td>
+            <td>21</td>
+            <td>90.99</td>
+            <td rowspan="4">MUJ</td>
+        </tr>
+        <tr>
+            <td>Aakib</td>
+            <td>16</td>
+            <td>95.99</td>
+        </tr>
+        <tr>
+            <td>Jibrail</td>
+            <td>21</td>
+            <td>96.99</td>
+        </tr>
+        <tr>
+            <td>Faizan</td>
+            <td>21</td>
+            <td>99.25</td>
+        </tr>
+        <tr>
+            <td colspan="2">Total expence</td>
+            <td>$46M</td>
+        </tr>
+    </table>
+
+    <table>
+        thead*
+    </table>
+</body>
+</html>

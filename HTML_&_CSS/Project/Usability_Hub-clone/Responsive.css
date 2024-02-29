@@ -1,0 +1,35 @@
+@media screen and (max-width: 991px) {
+    body {
+        overflow: hidden;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .banner{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner{
+        display: none;
+    }
+    .logo {
+        width: 150px;
+    }
+
+    .navigation {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-container {
+        display: none;
+    }
+
+    
+}
